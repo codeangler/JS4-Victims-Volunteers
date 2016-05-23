@@ -16,12 +16,10 @@ var nVictims = 3;
 var victimDetails = [["Casey", 111, "Winter"], ["Lee", 222, "Haven"], ["Burnett", 333, "Hickok"]];
 
 // Generate a roster of victims
-var victimRoster = (function (i){
-	for (var i = 0; i < nVictims; i++){
-		roster = "" + victimDetails[0][i];
-	}
-	return roster; 
-})(i)
+var victimRoster = "";
+for(var i = 0; i < nVictims; i++){
+	victimRoster = victimRoster + victimDetails[i][0] + "\n"  
+}
 
 // Ask ur a number of volunteers to record
 // var numVolunteers = prompt("How many volunteers?");
@@ -37,11 +35,17 @@ var victimRoster = (function (i){
 //  	volunteerDetails.push([nName, nPhoneNum,nStreet]);
 //     j++;    
 // }
+var numVolunteers = 3;
+var volunteerDetails = [["Emily", 111, "Summer"], ["Lynn", 222, "Mountain"], ["Barnak", 333, "Hickok"]];
 
+var volunteerRoster = "";
+for (var j = 0; j < numVolunteers; j++) {
+	volunteerRoster = volunteerRoster + volunteerDetails[j][0] + "\n"
+}
 
 
 // Return an alert
 
-alert("There are " + nVictims + " people in need." + "");
-// "\n& there are " + numVolunteers + " volunteers ready to help.");
-console.log(victimRoster);
+alert("There are " + nVictims + " people in need." + 
+"\n& there are " + numVolunteers + " volunteers ready to help.\n" +
+"\nVictim's Name(s)\n" + victimRoster + "\nVolunteer Name(s)\n" + volunteerRoster);
