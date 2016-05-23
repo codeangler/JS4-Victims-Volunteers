@@ -1,7 +1,7 @@
 // Ask user for input
 var nVictims = prompt ("How many disaster victims?");
 
-//  Set arrays to accept victim(v) = [[Name, Phone Number, Street]]
+// //  Set arrays to accept victim(v) = [[Name, Phone Number, Street]]
 var victimDetails = [];
 var i = 0;
 while (i < nVictims){
@@ -12,8 +12,10 @@ while (i < nVictims){
     i++;
 }
 
-// Ask user for a number of volunteers to record
-var numVolunteers = prompt("How many volunteers?");
+
+
+// Ask ur a number of volunteers to record
+// var numVolunteers = prompt("How many volunteers?");
 
 // Set array to accept volunteer details
 var volunteerDetails = [];
@@ -27,8 +29,9 @@ while (j < numVolunteers){
     j++;    
 }
 
-// Return a alert
 
-alert("There are " + nVictims + " people in need." +
-"\n& there are " + numVolunteers + " volunteers ready to help.");
-console.log(victimDetails);
+
+// Return an alert
+
+alert("There are " + nVictims + " people in need." + "");
+// "\n& there are " + numVolunteers + " volunteers ready to help.");
